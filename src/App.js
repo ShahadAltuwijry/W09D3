@@ -1,14 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import UserData from "./components/UserData";
+import UserPage from "./components/UserPage";
 import Login from "./components/Login";
 import Landing from "./components/Landing";
 import Register from "./components/Register";
 import Tasks from "./components/Tasks";
 
 function App() {
-
   return (
     <div className="App">
       <Routes>
@@ -16,7 +15,7 @@ function App() {
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/" element={<Landing />} />
         <Route exact path="/tasks" element={<Tasks />} />
-        <Route exact path="/userInfo" element={<UserData />} />
+        <Route exact path="/userInfo" element={<UserPage />} />
       </Routes>
     </div>
   );
