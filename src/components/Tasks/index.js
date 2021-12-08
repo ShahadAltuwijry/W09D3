@@ -23,10 +23,10 @@ const Tasks = () => {
 
   const BASE_URL = process.env.REACT_APP_BASE_URL;
 
-  // const moving = () => {
-  //   // eslint-disable-next-line
-  //   navigate("/");
-  // };
+  const moving = () => {
+    // eslint-disable-next-line
+    navigate("/");
+  };
 
   //user tasks
   const getTasks = async () => {
@@ -181,11 +181,10 @@ const Tasks = () => {
   return (
     <div>
       {!state.signIn.user ? (
-        //           <>
-        //   <h1>you must login or register first</h1>
-        //   <button onClick={() => moving()}>Go</button>
-        // </>
-        <button>go</button>
+        <>
+          <h1>you must login or register first</h1>
+          <button onClick={moving()}>Go</button>
+        </>
       ) : (
         <div className="taskMainDiv">
           <h1>Tasks</h1>

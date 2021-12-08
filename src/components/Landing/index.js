@@ -17,8 +17,11 @@ const Landing = () => {
 
   return (
     <div>
-      {state.signIn.token ? (
-        <button onClick={moving()}>go</button>
+      {state.signIn.user ? (
+        <>
+          <h1>Lost the way? </h1>
+          <button onClick={() => moving()}>go back to tasks page</button>
+        </>
       ) : (
         <>
           <h1>To Do </h1>
