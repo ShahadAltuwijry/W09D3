@@ -188,7 +188,7 @@ const Tasks = () => {
       ) : (
         <div className="taskMainDiv">
           <h1>Tasks</h1>
-          {state.task.length < 0 ? (
+          {state.task.tasks && state.task.tasks.length < 0 ? (
             <h1>no tasks found</h1>
           ) : (
             <>
@@ -210,16 +210,11 @@ const Tasks = () => {
                           <>
                             <p
                               className={
-                                // !state.task.tasks.isCompleted
-                                state.task.tasks.map((task) => {
-                                  return !task.isCompleted;
-                                })
-                                  ? "tasksP"
-                                  : "taskDone"
+                                !task.isCompleted ? "tasksP" : "taskDone"
                               }
                               key={i + 4}
                             >
-                              {state.task.tasks.name}
+                              {task.name}
                             </p>
                             <p
                               style={{
@@ -229,7 +224,7 @@ const Tasks = () => {
                               }}
                             >
                               user id:
-                              {state.task.tasks.userId}
+                              {task.userId}
                               {/* {tasks.map((task, i) => {
                                 return(
                                 <div key={i}>
@@ -276,6 +271,7 @@ const Tasks = () => {
                 //user task return
                 <>
                   {state.task.tasks.length > 0 ? (
+                    state.task.tasks &&
                     state.task.tasks.map((task, i) => {
                       return (
                         <div key={task.name} className="taskDiv">

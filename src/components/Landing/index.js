@@ -7,7 +7,7 @@ const Landing = () => {
     return state;
   });
   const dispatch = useDispatch();
-  console.log(state, "state");
+  // console.log(state, "state");
 
   const navigate = useNavigate();
 
