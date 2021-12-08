@@ -9,6 +9,10 @@
 - **Adding tasks**: Both users and Admins can add tasks, but to themselves only.
 - **Admins viewing all users**: Admins have access to a list of all users registred in the app.
 
+# Frontend ER Diagram
+![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/92247858/145263523-adc2bee7-485a-47f2-bd12-e7891f808fff.png)
+
+
 # Components
 
 - **Landing**
