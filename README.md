@@ -9,7 +9,6 @@
 - **Adding tasks**: Both users and Admins can add tasks, but to themselves only.
 - **Admins viewing all users**: Admins have access to a list of all users registred in the app.
 
-
 # Components
 
 - **Landing**
@@ -20,9 +19,10 @@
 
 # Fronend Links & Access
 
-| Path      | Permissions | Behavior                                                                                                  |
-| --------- | ----------- | --------------------------------------------------------------------------------------------------------- |
-| /         | Public      | Landing page, it'll give the visitor two options: Logging in for logged users & registring for new users. |
-| /register | Public      | Register new user, the default role of the registration is user & admins can register using the backend.  |
-| /login    | Public      | Users logging in page, after logging in it will instently navigate you to you tasks page.                 |
-
+| Path      | Permissions | Behavior                                                                                                                                                  |
+| --------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| /         | Public      | Landing page, it'll give the visitor two options: Logging in for logged users & registring for new users.                                                 |
+| /register | Public      | Register new user, the default role of the registration is user & admins can register using the backend.                                                  |
+| /login    | Public      | Users logging in page, after logging in it will instently navigate you to you tasks page.                                                                 |
+| /tasks    | Privet      | Only registred users can access this page and view thier own tasks.                                                                                       |
+| /userinfo | privet      | Only registred users can access this page and view thier own information, in this page Admins get an option to view a list of registred users of the app. |
