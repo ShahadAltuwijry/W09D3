@@ -225,12 +225,6 @@ const Tasks = () => {
                             >
                               user id:
                               {task.userId}
-                              {/* {tasks.map((task, i) => {
-                                return(
-                                <div key={i}>
-                                  <p>{task.userId}</p>
-                                </div>);
-                              })} */}
                             </p>
                           </>
                           <div className="btnsDiv">
